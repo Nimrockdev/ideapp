@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getDev } from '../components/helpers/getDev';
+import { getDev } from '../helpers/getDev';
 
 export const UseFetchDev = (about) => {
 
@@ -12,12 +12,13 @@ export const UseFetchDev = (about) => {
 
     useEffect( () => {
 
-        getDev(about).then(urlDevarc=>{
+        getDev(about).then(data=>{
   
             setState({
-                data: urlDevarc,
+                data,
                 loading: false
             });
+
         });
 
 

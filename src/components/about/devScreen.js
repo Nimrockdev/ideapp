@@ -3,12 +3,18 @@ import { UseFetchDev } from '../../hooks/useFetchDev'
 
 export const devScreen = (about) => {
     
-    const {data:data, loading} = UseFetchDev(about);
+    const {data, loading} = UseFetchDev(about);
     return (    
-        <>  
-           <h3> {data.github}</h3>
-           <h3> {data.readme}</h3>
-           <h3> {data.postman}</h3>
+        <> 
+           <h2>DevScreen</h2>
+           {loading && <p className= "animate__animated animate__flash">Loading</p>}
+           <div>           
+                <a href={data.github}>GitHub</a>
+                <br/>
+                <a href={data.readme}>Readme</a>      
+                <br/>
+                <a href={data.postman}>Postman</a>
+           </div>
         </>
     )
 }
