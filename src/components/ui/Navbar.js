@@ -8,7 +8,7 @@ export const Navbar = () => {
                 className="navbar-brand" 
                 to="/"
             >
-                Productos
+                Inicio
             </Link>
             <div className="navbar-collapse">
                 <div className="navbar-nav">
@@ -17,11 +17,26 @@ export const Navbar = () => {
                         activeClassName="active"
                         className="nav-item nav-link" 
                         exact
-                        to="/user"
+                        to="/product"
+                    >
+                        Producto
+                    </NavLink>
+                    <NavLink 
+                        activeClassName="active"
+                        className="nav-item nav-link" 
+                        exact
+                        to="/"
+                    >
+                        Pedidos
+                    </NavLink>
+                    <NavLink 
+                        activeClassName="active"
+                        className="nav-item nav-link" 
+                        exact
+                        to="/"
                     >
                         Usuario
                     </NavLink>
-
                     {/* <NavLink 
                         activeClassName="active"
                         className="nav-item nav-link" 
