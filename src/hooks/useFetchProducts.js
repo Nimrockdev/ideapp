@@ -12,7 +12,7 @@ export const useFetchProducts = (word) => {
 
         getProducts(word).then(
             data => {
-                console.log(data);
+                //console.log(data);
                 setState({
                     data,
                     loading:false

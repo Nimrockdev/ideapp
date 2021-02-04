@@ -20,7 +20,7 @@ export const AddWord = ({setWord}) => {
         
     }
 
-    return (
+    return (  
         <form onSubmit= {handleSubmit} >
           <input
               type="text"
