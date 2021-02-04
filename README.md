@@ -1,4 +1,4 @@
-# Ideapp Ecommerce
+# Ideapp Frontend
 
 
 ![https://github.com/Nimrockdev/ideapp](https://raw.githubusercontent.com/Nimrockdev/ideapp/main/ideapp_img/Ideapp.png)
