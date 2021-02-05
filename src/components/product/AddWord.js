@@ -21,6 +21,7 @@ export const AddWord = ({setWord}) => {
     }
 
     return (  
+       
         <form onSubmit= {handleSubmit} >
           <input
               type="text"
@@ -28,6 +29,7 @@ export const AddWord = ({setWord}) => {
               onChange= {handleInputChange}
           />
         </form>
+       
     )
 }
 

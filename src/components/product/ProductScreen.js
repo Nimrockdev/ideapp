@@ -8,13 +8,15 @@ export const ProductScreen = () => {
    const [word, setWord] = useState(['Xiaomi']);
 
    const {data, loading} = useFetchProducts(word);
-   console.log(data);
+   
     return (
-        <>
-            <h1>ProductScreen ....</h1>
+        <div>
+             
+            <h2>Busqueda ....</h2>
             <AddWord setWord={setWord}/>
-            <br/>
-            <div className="card-columns">
+            <hr/>
+           
+           
                 {
                     data.map (
                         product =>(
@@ -25,8 +27,8 @@ export const ProductScreen = () => {
                     ) 
                 }
 
-            </div>
+           
             
-        </>
+        </div>
     )
 }
