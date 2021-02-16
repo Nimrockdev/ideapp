@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export const ProductCard = ({img,avaiable,stock,_id, name, price, priceCost, description, category,__v}) => {
+export const ProductList = ({img,avaiable,stock,_id, name, price, priceCost, description, category,__v}) => {
       return (
         <div className="card ms-3" style={{maxWidth:420}}>
             <div className="row no-gutters" >

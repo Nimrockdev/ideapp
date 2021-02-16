@@ -1,34 +1,27 @@
-import React, { useState } from 'react'
-import { useFetchProducts } from '../../hooks/useFetchProducts'
-import { AddWord } from './AddWord';
-import { ProductCard } from './ProductCard';
+import React from 'react';
+import { Redirect, useParams } from 'react-router-dom';
+import { getProductByID } from '../../helpers/getProductByID';
+import { useFetchProductByID } from '../../hooks/useFetchProductByID';
+
 
 export const ProductScreen = () => {
+    
+    const {productID} = useParams();
 
-   const [word, setWord] = useState(['Xiaomi']);
+    const { data, loading } = useFetchProductByID(productID)
 
-   const {data, loading} = useFetchProducts(word);
-   
+    if (!data){
+        return <Redirect to="/" />;
+    }
+
+    const {
+       img, avaiable, stock, _id, name, price, priceCost, description, category, __v
+    } = data;
+
+
     return (
         <div>
-             
-            <h2>Busqueda ....</h2>
-            <AddWord setWord={setWord}/>
-            <hr/>
-           
-           
-                {
-                    data.map (
-                        product =>(
-                           <ProductCard key= {product.id}
-                           {...product}>
-                           </ProductCard>
-                        )
-                    ) 
-                }
-
-           
-            
+            <h1>{name}</h1>
         </div>
     )
 }
