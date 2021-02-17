@@ -1,13 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useMemo } from 'react'
 import { useFetchProducts } from '../../hooks/useFetchProducts'
 import { AddWord } from './AddWord';
 import { ProductList } from './ProductList';
 
 export const ProductsScreen = () => {
 
-   const [word, setWord] = useState(['Xiaomi']);
+   const [word, setWord] = useState(['xiaomi']);
 
    const {data, loading} = useFetchProducts(word);
+
+   //const { data, loading } = useMemo(() => useFetchProducts(word), [word])//useFetchProducts(word);
    
     return (
         <div>
@@ -15,7 +17,7 @@ export const ProductsScreen = () => {
             <h2>Busqueda ....</h2>
             <AddWord setWord={setWord}/>
             <hr/>
-           
+            <div className= "card-columns">
            
                 {
                     data.map (
@@ -27,7 +29,7 @@ export const ProductsScreen = () => {
                     ) 
                 }
 
-           
+            </div>
             
         </div>
     )
