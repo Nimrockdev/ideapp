@@ -9,9 +9,7 @@ export const ProductScreen = ({history}) => {
 
     const { data, loading } = useFetchProductByID(productID);
     
-    //const { data, loading } = useMemo(() => useFetchProductByID(productID), [productID]);
-
-    
+    // const { data, loading } = useMemo(() => useFetchProductByID(productID), [productID]);
 
     if (!data){
         return <Redirect to="/" />;
@@ -38,7 +36,7 @@ export const ProductScreen = ({history}) => {
                 <img 
                     src={img}
                     alt={name}
-                    className="img-thumbmail"
+                    className="img-thumbmail animate__animated animate__fadeIn"
                     width= '320'
                 />
             </div>

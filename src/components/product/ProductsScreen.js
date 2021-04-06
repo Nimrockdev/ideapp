@@ -6,10 +6,9 @@ import { ProductList } from './ProductList';
 export const ProductsScreen = () => {
 
    const [word, setWord] = useState(['xiaomi']);
-
    const {data, loading} = useFetchProducts(word);
 
-   //const { data, loading } = useMemo(() => useFetchProducts(word), [word])//useFetchProducts(word);
+//    const { data, loading } = useMemo(() => useFetchProducts(word), [word]);
    
     return (
         <div>
@@ -18,7 +17,7 @@ export const ProductsScreen = () => {
             <AddWord setWord={setWord}/>
             <hr/>
             {loading && <p className= "animate__animated animate__flash">Por favor, espere aque el servidor se ponga en marcha</p>}
-            <div className= "card-columns">
+            <div className= "card-columns animate__animated animate__fadeIn">
            
                 {
                     data.map (

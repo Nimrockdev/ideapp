@@ -16,8 +16,7 @@ export const useFetchProductByID = (word) => {
     useEffect(() => {
 
         getProductByID(word).then(
-            data => {  
-                             
+            data => {                              
                 setState({
                     data: data[0],
                     loading: false
