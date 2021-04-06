@@ -20,6 +20,7 @@ export const DashboardRoutes = () => {
                     <Route exact path="/StartPage" component={StartPageScreen} /> 
                     <Redirect to="/StartPage"/>
                </Switch>
+               <p>Por favor, espere a que el servidor se ponga en marcha</p>
            </div>
         </>
     )
