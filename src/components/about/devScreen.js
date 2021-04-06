@@ -7,14 +7,14 @@ export const devScreen = (about) => {
     return (    
         <> 
            <h2>DevScreen</h2>
-           {loading && <p className= "animate__animated animate__flash">Loading</p>}
+           {loading && <p className= "animate__animated animate__flash">Por favor, espere aque el servidor se ponga en marcha</p>}
            <div>           
                 <a href={data.github}>GitHub</a>
                 <br/>
                 <a href={data.readme}>Readme</a>      
                 <br/>
                 <a href={data.postman}>Postman</a>
-           </div>
+           </div>          
         </>
     )
 }

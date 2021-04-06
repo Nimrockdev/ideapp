@@ -17,6 +17,7 @@ export const ProductsScreen = () => {
             <h2>Busqueda ....</h2>
             <AddWord setWord={setWord}/>
             <hr/>
+            {loading && <p className= "animate__animated animate__flash">Por favor, espere aque el servidor se ponga en marcha</p>}
             <div className= "card-columns">
            
                 {
