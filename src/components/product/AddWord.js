@@ -12,7 +12,6 @@ export const AddWord = ({setWord}) => {
 
     const handleSubmit = (e)=>{
         e.preventDefault();
-
         if(inputValue.trim().length>1){        
             setWord(inputValue.trim());
             setInputValue('');
