@@ -13,7 +13,7 @@ export const DashboardRoutes = () => {
            <Navbar/> 
            <div className="container mt-2">
                <Switch>
-                    <Route exact path="/product" component={ProductsScreen} />                   
+                    <Route exact path="/product" component={ProductsScreen} />                     
                     <Route exact path="/product/:productID" component={ProductScreen} /> 
                     <Route exact path="/user" component={UserScreen} /> 
                     <Route exact path="/dev" component={devScreen} /> 

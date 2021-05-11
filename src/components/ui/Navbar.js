@@ -12,14 +12,13 @@ export const Navbar = () => {
             </Link>
             <div className="navbar-collapse">
                 <div className="navbar-nav">
-
                     <NavLink 
                         activeClassName="active"
                         className="nav-item nav-link" 
                         exact
                         to="/product"
                     >
-                        Producto
+                        Productos
                     </NavLink>
                     <NavLink 
                         activeClassName="active"

@@ -15,10 +15,8 @@ export const useFetchProducts = (word) => {
         getProducts(word).then(
             data => {
 
-                setState({
-                    data,
-                    loading:false
-                })
+                setState({ data, loading:false });
+                
             }
         )
 

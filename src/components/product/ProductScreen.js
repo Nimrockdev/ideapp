@@ -16,7 +16,7 @@ export const ProductScreen = ({history}) => {
     }
     
     const handleReturn = () => {
-
+        console.log(history)
         if (history >= 2){
             history.push('/');
         }else{
@@ -46,16 +46,11 @@ export const ProductScreen = ({history}) => {
                 <h5>{stock} Uni.</h5>
                 <h5>{price} €</h5>
 
-                <button 
-                    className="btn btn-outline-info"
-                    onClick= {handleReturn}
-                >
-                    Return
-                </button> 
-                
-                <button type="button" class="btn btn-primary">Buy</button>
-
-
+                <div class="btn-toolbar">
+                    <button id="btnReturn" type="button" class="btn btn-outline-info mr-2 mb-2" onClick= {handleReturn}>Volver</button>
+                    <button id="btnADD" type="button" class="btn btn-success mr-2 mb-2">Comprar</button>
+                    <button id="btnCancel" type="button" class="btn btn-danger mr-2 mb-2">Cancelar</button>                    
+                </div>
             </div>
         </div>
     )
