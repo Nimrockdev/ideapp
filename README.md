@@ -8,6 +8,8 @@
 
 [Ideapp, Github Pages](https://nimrockdev.github.io/ideapp/ "Ideapp Products")  **NEW**  
 
+Soon we will migrate the Heroku backend hosting service to another service 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
