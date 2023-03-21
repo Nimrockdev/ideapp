@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/ideapp/static/js/main.78e15c23.chunk.js",
-    "main.js.map": "/ideapp/static/js/main.78e15c23.chunk.js.map",
-    "runtime-main.js": "/ideapp/static/js/runtime-main.c6aa557c.js",
-    "runtime-main.js.map": "/ideapp/static/js/runtime-main.c6aa557c.js.map",
-    "static/js/2.74a03267.chunk.js": "/ideapp/static/js/2.74a03267.chunk.js",
-    "static/js/2.74a03267.chunk.js.map": "/ideapp/static/js/2.74a03267.chunk.js.map",
+    "main.js": "/ideapp/static/js/main.78710fa0.chunk.js",
+    "main.js.map": "/ideapp/static/js/main.78710fa0.chunk.js.map",
+    "runtime-main.js": "/ideapp/static/js/runtime-main.cdcc7866.js",
+    "runtime-main.js.map": "/ideapp/static/js/runtime-main.cdcc7866.js.map",
+    "static/js/2.efccf6ac.chunk.js": "/ideapp/static/js/2.efccf6ac.chunk.js",
+    "static/js/2.efccf6ac.chunk.js.map": "/ideapp/static/js/2.efccf6ac.chunk.js.map",
     "index.html": "/ideapp/index.html",
-    "static/js/2.74a03267.chunk.js.LICENSE.txt": "/ideapp/static/js/2.74a03267.chunk.js.LICENSE.txt"
+    "static/js/2.efccf6ac.chunk.js.LICENSE.txt": "/ideapp/static/js/2.efccf6ac.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c6aa557c.js",
-    "static/js/2.74a03267.chunk.js",
-    "static/js/main.78e15c23.chunk.js"
+    "static/js/runtime-main.cdcc7866.js",
+    "static/js/2.efccf6ac.chunk.js",
+    "static/js/main.78710fa0.chunk.js"
   ]
 }
