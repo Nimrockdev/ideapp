@@ -2,7 +2,7 @@
 
 export const getDev = async(about) => {
 
-    const url = 'https://devarc.herokuapp.com/dev';
+    const url = 'https://devarc-production.up.railway.app/dev';
     const resp = await fetch(url);
     const urlDevarc = await resp.json();
     const data = urlDevarc.urlDevarc; 
