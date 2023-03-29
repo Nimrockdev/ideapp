@@ -6,9 +6,7 @@
   
   # Github Pages, test it !
 
-[Ideapp, Github Pages](https://nimrockdev.github.io/ideapp/ "Ideapp Products")  **NEW**  
-
-Soon we will migrate the Heroku backend hosting service to another service 
+[Ideapp, Github Pages](https://nimrockdev.github.io/ideapp/ "Ideapp Products")    
 
 # Getting Started with Create React App
 
